@@ -2,7 +2,7 @@
 
 Jupyter notebook to build and deploy fraud detection on a CVM.
 
-`setup` contains all the scripts to download fraud detection and to create an "input" dataset to then upload to Azure/AWS.
+`setup_secure_env` contains all the scripts to download fraud detection and to create an "input" dataset to then upload to Azure/AWS.
 
 Then the remaining notebooks take care of downloading the data from Azure/AWS, decrypting by doing attestation with a remote server, and running the model by feeding the provided data.
 
