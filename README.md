@@ -23,5 +23,5 @@ Once the data is decrypted, feed it to the model that then prints out which cred
 In this example, we showcase all 3 kinds of data security:
 
 * Data at rest: in `0_intro.ipynb` we show the disk is encrypted
-* Data in transit: in `4_download_data.ipynb` we show the data is encrypted and travels securely from the cloud to our CVM
-* Data in use: in `5_decrypt_data.ipynb` we ensure the right hardware and software are in use to guarantee memory encryption and that the software has not been tampered with.
+* Data in transit: in `5_download_data.ipynb` we show the data is encrypted and travels securely from the cloud to our CVM
+* Data in use: in `6_decrypt_data.ipynb` we ensure the right hardware and software are in use to guarantee memory encryption and that the software has not been tampered with.
