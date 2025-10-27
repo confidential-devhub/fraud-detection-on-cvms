@@ -18,7 +18,7 @@ output_name = sess.get_outputs()[0].name
 
 def ask_model(query):
     prediction = sess.run([output_name], {input_name: scaler.transform(query).astype(np.float32)})
-    threshold = float(os.getenv("TRESHOLD_PREDICTION", 0.999952))
+    threshold = float(os.getenv("TRESHOLD_PREDICTION", 0.999994))
     bool_answer = np.squeeze(prediction) > threshold and np.squeeze(prediction) < 1
     perc_answer = "{:.5f}".format(100 * np.squeeze(prediction)) + "%"
     return (bool_answer, perc_answer)
